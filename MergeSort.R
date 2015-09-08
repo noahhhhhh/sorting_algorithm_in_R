@@ -1,12 +1,10 @@
 ###############################################################################################
 ## merge sort #################################################################################
 ###############################################################################################
-
-items <- c(18, 16, 8, 7, 6, 3, 11, 9, 15, 1, 1, 1)
-items
-
+## Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
+## Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
 MergeCompare <- function(left, right){
-    lenLeft <- length(len)
+    lenLeft <- length(left)
     lenRight <- length(right)
     
     newItems <- numeric(lenLeft + lenRight)
@@ -40,5 +38,3 @@ MergeSort <- function(items){
         items
     }
 }
-
-MergeSort(items)
