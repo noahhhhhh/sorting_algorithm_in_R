@@ -5,5 +5,5 @@
 string
 vecString <- unlist(strsplit(string, split = ""))
 for (item in vecString){
-    
+    prevList <- item
 }
