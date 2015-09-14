@@ -1,9 +1,9 @@
 ###############################################################################################
 ## swap 2 integer without using temp ##########################################################
 ###############################################################################################
-SwapNoTemp <- function(int1, int2){
-    int1 <- int1 + int2
-    int2 <- int1 - int2
-    int1 <- int1 - int2
+SwapNoTemp <- function(int1, int2){ # e.g. int1 = 6, int2 = 3
+    int1 <- int1 + int2 # int1 = 9, int2 = 3
+    int2 <- int1 - int2 # int2 = 6, int1 = 9
+    int1 <- int1 - int2 # int1 = 3, int2 = 6
     return(c(int1, int2))
 }
